@@ -175,7 +175,7 @@ class RAG:
                 messages=[
                     {
                         "role": "system",
-                        "content": "You are Kimi, an AI assistant created by Moonshot AI.",
+                        "content": "You are an AI assistant.",
                     },
                     {
                         "role": "user",
