@@ -35,6 +35,15 @@ response = rag.run("Your query here")
 print(response)
 ```
 
+## Configuration
+
+Create a `.env` file:
+
+```env
+# Model settings
+HF_API_KEY="your-huggingface-api-key-here"
+```
+
 ## Usage Examples
 
 See `example_usage.py` for complete examples.
