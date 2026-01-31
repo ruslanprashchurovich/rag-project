@@ -50,13 +50,5 @@ config.py
 .env.test.local
 .env.production.local
 
-# Data files (if you have any sample data)
-data/
-*.csv
-*.json
-*.txt
-*.parquet
-*.feather
-
 # Notebook checkpoints
 .checkpoints/

@@ -39,7 +39,7 @@ def get_api_key():
     return api_key
 
 
-def load_json(file_path: str):
+def load_data(file_path: str):
     """Load test data"""
     try:
         with open(file=file_path, mode="r") as f:
@@ -60,7 +60,7 @@ def main():
     rag = RAG(encoder, openai_api_key=api_key)
 
     # Sample documents
-    documents = load_json("./data/test_documents.json")
+    documents = load_data("./data/test_documents.json")
 
     # Fit the model
     rag.fit(documents)
@@ -72,7 +72,7 @@ def main():
     print(f"Response: {response}\n")
 
     print("=== Example 2: Question Clustering ===")
-    questions = load_json("./data/test_questions.json")
+    questions = load_data("./data/test_questions.json")
 
     # Create QCluster instance
     qcluster = QCluster(questions_idx=list(range(len(questions))), questions=questions)
