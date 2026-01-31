@@ -2,8 +2,6 @@
 
 A simple Retrieval-Augmented Generation (RAG) implementation with question clustering capabilities.
 
-![RAG Architecture](images/rag.png)
-
 ## Features
 
 - Document retrieval using semantic similarity
